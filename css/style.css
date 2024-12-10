@@ -19,6 +19,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 /* line 11, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
@@ -418,7 +419,7 @@ ul {
 @media only screen and (min-width: 1200px) and (max-width: 3640px) {
   /* line 288, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
   .container {
-    max-width: 1000px;
+    max-width: 1250px;
   }
 }
 
@@ -2785,7 +2786,7 @@ ul {
   color: #adadad;
   font-size: 20px;
   font-weight: 700;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 /* line 20, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
