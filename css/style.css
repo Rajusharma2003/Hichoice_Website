@@ -2543,7 +2543,7 @@ ul {
   right: -20%;
   bottom: 0;
   padding: 35px 80px;
-  background-color: #fff;
+  background-color: #ecfdff;
 }
 
 @media (max-width: 991px) {
@@ -3084,7 +3084,7 @@ ul {
 /*************** subscribe now **********************/
 /* line 2, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_subscribe_area.scss */
 .subscribe_area {
-  background-image: url("../img/subscribe_area.png");
+  /* background-image: url("../img/subscribe_area.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
