@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -24,10 +24,14 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
 
     <!-- This is for the bootstrap Icon cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- This is for the video section only -->
     <style>
         .video-container {
           position: relative;
@@ -39,9 +43,28 @@
         .video-container video {
           width: 100%;
           height: 100%;
-          object-fit: cover; /* Ensures the video covers the entire container */
+          object-fit: fill; /* Ensures the video covers the entire container */
+        }
+
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+        }
+        .testimonial .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .testimonial .rating i {
+            color: #ffc107;
         }
       </style>
+      <!-- End video section -->
 </head>
 
 <body>
@@ -88,10 +111,10 @@
                                     </div>
                                 </li> -->
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">about</a>
+                                    <a class="nav-link" href="about.html">about</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -327,6 +350,39 @@
     </section>
     <!-- category section part end-->
 
+     <!-- about Section -->
+     <section id="features" class="features section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 class="text-center mb-30">About us</h2>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+          <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+            <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+              <img src="img/haboutimg.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+              <h3 style="color: #3fbd33;">Electric Appliances by HiChoice</h3>
+              <p>HiChoice offers a wide range of electric appliances, including energy-efficient fans and reliable heaters, designed to enhance comfort and convenience in your home. Each product combines innovation, durability, and quality for everyday use.</p>
+
+                <ul class="pt-5">
+                    <li><i class="bi bi-check"></i> <span>High-quality appliances at competitive prices, offering great value for money.</span></li>
+                    <li><i class="bi bi-check"></i><span>Built with multiple safety mechanisms to ensure secure usage.</span></li>
+                    <li><i class="bi bi-check"></i> <span>Designed for simple operation, making them ideal for every household.</span>.</li>
+                  </ul>
+                 
+              <div class="pt-3" >
+                  <a  href="#" style="background-color: #3fbd33;" class="btn text-white">Inquiry Now</a>
+              </div>
+            </div>
+          </div><!-- Features Item -->
+  
+        </div>
+  
+      </section>
+    <!-- /end about Section -->
+
     <!-- product_list start-->
     <section class="product_list section_padding">
         <div class="container">
@@ -343,9 +399,9 @@
                         <div class="single_product_list_slider">
                             <div class="row align-items-center justify-content-between">
                                 <!-- product card -->
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="img/product/hproduct1.png" alt="product img">
+                                <div class="col-lg-3 col-sm-6" >
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                        <img  src="img/product/hproduct1.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
                                             <h3>₹150.00</h3>
@@ -355,7 +411,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                         <img src="img/product/hproduct6.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -366,7 +422,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct13.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -377,7 +433,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct4.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -388,7 +444,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct5.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -399,7 +455,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct2.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -410,7 +466,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct7.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -421,7 +477,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct8.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -437,7 +493,7 @@
                             <div class="row align-items-center justify-content-between">
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct9.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -449,7 +505,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct10.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -461,7 +517,7 @@
                                 </div>
                                 <!-- prodcut card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct11.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -496,7 +552,7 @@
                                 </div>
                                 <!-- product card  -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct14.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -508,7 +564,7 @@
                                 </div>
                                 <!-- product card -->
                                 <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct15.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -519,8 +575,8 @@
                                     </div>
                                 </div>
                                 <!-- product card -->
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
+                                <div class="col-lg-3 col-sm-6" >
+                                    <div class="single_product_item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="img/product/hproduct16.png" alt="product img">
                                         <div class="single_product_text">
                                             <h4>hichoice product</h4>
@@ -544,7 +600,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6">
-                    <div class="offer_img">
+                    <div class="offer_img d-flex justify-content-center align-items-center">
                         <img src="img/offer_img.png" alt="">
                     </div>
                 </div>
@@ -574,12 +630,14 @@
     </section>
     <!-- about section start-->
 
+    <!-- video section -->
     <section class="video-container">
         <video autoplay loop muted playsinline>
           <source src="https://hichoices.netlify.app/assets/images/WhatsApp%20Video%202024-09-02%20at%204.30.37%20PM.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </section>
+      <!-- End video section -->
 
     <!-- subscribe_area part start-->
     <section class="subscribe_area section_padding bg-light">
@@ -632,47 +690,82 @@
     </section>
     <!--::subscribe_area part end::-->
 
-
-    <!-- subscribe_area part start-->
-    <section class="client_logo padding_top ">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_1.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_2.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_3.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_4.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_5.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_3.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_1.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_2.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_3.png" alt="">
-                    </div>
-                    <div class="single_client_logo">
-                        <img src="img/client_logo/client_logo_4.png" alt="">
+ <!-- Testimonials section -->
+ <div class="testimonial">
+    <div class="container">
+        <h2 class="text-center mb-5">What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="px-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="img-fluid mx-auto" src="https://bootstrapmade.com/content/demo/Append/assets/img/testimonials/testimonials-4.jpg" alt="Client Photo">
+                    <h5 class="card-title mt-3">John Doe</h5>
+                    <p class="card-text">"Amazing service! Truly professional and exceeded my expectations."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
                 </div>
             </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="px-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="img-fluid mx-auto" src="https://bootstrapmade.com/content/demo/Append/assets/img/testimonials/testimonials-1.jpg" alt="Client Photo">
+                    <h5 class="card-title mt-3">Jane Smith</h5>
+                    <p class="card-text">"Excellent customer support and great results. Highly recommend!"</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="px-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="img-fluid mx-auto" src="https://bootstrapmade.com/content/demo/Append/assets/img/testimonials/testimonials-2.jpg" alt="Client Photo">
+                    <h5 class="card-title mt-3">sena Wilson</h5>
+                    <p class="card-text">"Very professional and reliable service. I’m extremely satisfied."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="px-2">
+            <div class="card text-center">
+            <div class="card-body">
+                <img class="img-fluid mx-auto" src="https://bootstrapmade.com/content/demo/Append/assets/img/testimonials/testimonials-3.jpg" alt="Client Photo">
+                <h5 class="card-title mt-3">lena Wilson</h5>
+                <p class="card-text">"Very professional and reliable service. I’m extremely satisfied."</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
         </div>
-    </section>
-    <!--::subscribe_area part end::-->
+
+            </div>       </div>
+    </div>
+</div>
+ <!-- End testimonials section -->
 
     <!--::footer_part start::-->
     <footer class="footer_part bg-dark">
@@ -805,6 +898,44 @@
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.testimonial-slider').slick({
+            dots: true,
+            autoplay: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            adaptiveHeight: true,
+            responsive: [
+                {
+                    breakpoint: 768, // For tablets and below
+                    settings: {
+                        slidesToShow: 2, // Show 2 cards
+                    }
+                },
+                {
+                    breakpoint: 480, // For mobile devices
+                    settings: {
+                        slidesToShow: 1, // Show 1 card
+                    }
+                }
+            ]
+        });
+    });
+</script>
 </body>
 
 </html>
